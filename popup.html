@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <title>CTRL Zone</title>
+    <style>
+      body {
+        width: 250px;
+        padding: 20px;
+        background-color: #1a1a1a;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 18px;
+        color: #4a9eff;
+        margin-bottom: 20px;
+      }
+
+      .button {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .start-btn {
+        background-color: #22c55e;
+        color: white;
+      }
+
+      .stop-btn {
+        background-color: #ef4444;
+        color: white;
+      }
+
+      /* Status message */
+      .status {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 12px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">🎯 CTRL Zone</div>
+
+    <button id="startBtn" class="button start-btn">Start Focus Mode</button>
+
+    <button id="stopBtn" class="button stop-btn">Stop Focus Mode</button>
+
+    <div id="status" class="status">Ready to focus</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
