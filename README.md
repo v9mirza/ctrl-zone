@@ -39,7 +39,7 @@ _Extension will be available on the Chrome Web Store in the future_
 1. **Download the Extension**
 
    ```bash
-   git clone https://github.com/yourusername/ctrl-zone.git
+   git clone https://github.com/v9mirza/ctrl-zone.git
    # OR download and extract the ZIP file
    ```
 
