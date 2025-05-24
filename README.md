@@ -31,25 +31,30 @@ The extension automatically closes tabs from these distracting websites:
 ## 📦 Installation
 
 ### Method 1: Install from Chrome Web Store (Coming Soon)
-*Extension will be available on the Chrome Web Store in the future*
+
+_Extension will be available on the Chrome Web Store in the future_
 
 ### Method 2: Install as Developer Extension
 
 1. **Download the Extension**
+
    ```bash
    git clone https://github.com/yourusername/ctrl-zone.git
    # OR download and extract the ZIP file
    ```
 
 2. **Open Chrome Extensions Page**
+
    - Open Google Chrome
    - Navigate to `chrome://extensions/`
    - OR click the three dots menu → More Tools → Extensions
 
 3. **Enable Developer Mode**
+
    - Toggle the "Developer mode" switch in the top-right corner
 
 4. **Load the Extension**
+
    - Click "Load unpacked"
    - Select the `ctrl-zone` folder containing the extension files
    - The extension should now appear in your extensions list
@@ -62,17 +67,20 @@ The extension automatically closes tabs from these distracting websites:
 ## 🎮 How to Use
 
 ### Starting Focus Mode
+
 1. Click the **CTRL Zone** icon in your Chrome toolbar
 2. Click the **"🎯 Start Focus"** button
 3. All tabs with distracting websites will be automatically closed
 4. The status will show how many tabs were closed
 
 ### Stopping Focus Mode
+
 1. Click the **CTRL Zone** icon again
 2. Click the **"⏹️ Stop Focus"** button
 3. Focus mode will be deactivated
 
 ### Checking Status
+
 - The popup always shows your current focus mode status
 - Green text indicates focus mode is active
 - Gray text indicates focus mode is inactive
@@ -86,20 +94,20 @@ The extension automatically closes tabs from these distracting websites:
 3. **Find the `DISTRACTING_SITES` array** (around line 3):
    ```javascript
    const DISTRACTING_SITES = [
-       'youtube.com',
-       'facebook.com',
-       'twitter.com',
-       // Add your sites here
+     "youtube.com",
+     "facebook.com",
+     "twitter.com",
+     // Add your sites here
    ];
    ```
 4. **Add new sites** by including them in quotes:
    ```javascript
    const DISTRACTING_SITES = [
-       'youtube.com',
-       'facebook.com',
-       'twitter.com',
-       'mynewsite.com',    // ← Add like this
-       'anothersite.com'   // ← Or like this
+     "youtube.com",
+     "facebook.com",
+     "twitter.com",
+     "mynewsite.com", // ← Add like this
+     "anothersite.com", // ← Or like this
    ];
    ```
 5. **Remove sites** by deleting the line or commenting it out:
@@ -113,10 +121,12 @@ The extension automatically closes tabs from these distracting websites:
 ### Customizing the Interface
 
 **Colors and Styling:**
+
 - Edit `popup.html` to change colors, fonts, or button text
 - Look for the `<style>` section to modify CSS
 
 **Button Text:**
+
 - Change button labels in the HTML section of `popup.html`
 - Modify emoji icons or text as desired
 
@@ -143,18 +153,21 @@ ctrl-zone/
 ## 🔧 Technical Details
 
 ### Architecture
+
 - **Manifest V3** - Uses the latest Chrome extension format
 - **Service Worker** - Background script runs efficiently
 - **Message Passing** - Secure communication between popup and background
 - **Permissions** - Only requests necessary permissions for functionality
 
 ### Permissions Required
+
 - **`tabs`** - To query and close browser tabs
 - **`scripting`** - For advanced tab manipulation
 - **`activeTab`** - To access current tab information
 - **`<all_urls>`** - To check URLs of all websites
 
 ### Browser Compatibility
+
 - ✅ **Google Chrome** (Version 88+)
 - ✅ **Microsoft Edge** (Chromium-based)
 - ✅ **Brave Browser**
@@ -164,21 +177,25 @@ ctrl-zone/
 ## 🐛 Troubleshooting
 
 ### Extension Won't Load
+
 - **Check for JSON errors** in `manifest.json`
 - **Ensure all files are present** in the extension folder
 - **Check Chrome version** (needs Chrome 88+)
 
 ### Tabs Aren't Being Closed
+
 - **Check console logs** (Developer Tools → Console)
 - **Verify site URLs** in the `DISTRACTING_SITES` array
 - **Ensure proper permissions** are granted
 
 ### UI Doesn't Respond
+
 - **Reload the extension** in `chrome://extensions/`
 - **Check for JavaScript errors** in popup console
 - **Try clicking the buttons again**
 
 ### Debugging Steps
+
 1. **Open Developer Tools** while popup is open (right-click popup → Inspect)
 2. **Check Console tab** for error messages
 3. **Look at background script logs** in `chrome://extensions/` → CTRL Zone → "background page"
@@ -186,6 +203,7 @@ ctrl-zone/
 ## 🚀 Future Enhancements
 
 ### Planned Features
+
 - ⏱️ **Focus Timer** - Set specific focus session durations
 - 📈 **Productivity Stats** - Track focus sessions and blocked attempts
 - 🔐 **Website Whitelist** - Allow specific pages even on blocked domains
@@ -195,6 +213,7 @@ ctrl-zone/
 - 📊 **Analytics Dashboard** - Detailed productivity insights
 
 ### Contributing
+
 Contributions are welcome! If you'd like to add features or fix bugs:
 
 1. Fork the repository
@@ -210,12 +229,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🤝 Support
 
 ### Getting Help
+
 - **GitHub Issues** - Report bugs or request features
-- **Email** - contact@ctrlzone.com (for direct support)
 - **Documentation** - Check this README for common issues
 
 ### Feedback
+
 We'd love to hear from you! Please let us know:
+
 - How CTRL Zone has helped your productivity
 - Features you'd like to see added
 - Any bugs or issues you encounter
@@ -223,6 +244,7 @@ We'd love to hear from you! Please let us know:
 ## 📊 Version History
 
 ### Version 1.0 (Current)
+
 - ✅ Initial release
 - ✅ Basic focus mode functionality
 - ✅ Dark mode interface
@@ -231,6 +253,7 @@ We'd love to hear from you! Please let us know:
 - ✅ Status tracking
 
 ### Upcoming Version 1.1
+
 - 🔄 Focus timer functionality
 - 🔄 Website whitelist feature
 - 🔄 Improved error handling
@@ -250,5 +273,4 @@ We'd love to hear from you! Please let us know:
 
 **Made with ❤️ by [@v9mirza](https://github.com/v9mirza) for productivity enthusiasts**
 
-
-*Stay focused, stay productive! 🎯*
+_Stay focused, stay productive! 🎯_
